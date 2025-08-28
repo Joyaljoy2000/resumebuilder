@@ -1,5 +1,7 @@
 import { colors } from "@mui/material";
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 const LandingPage = () => {
   return (
@@ -8,7 +10,8 @@ const LandingPage = () => {
       <div className="smallcontainer">
         <h2>Designed to get hired.</h2>
         <h4>Your skills, your story, your next job — all in one.</h4>
-        <button>MAKE YOUR RESUME</button>
+         <Link to={'/resumeGenerator'} className='btn btn-primary'>Resume</Link>
+
       </div>
       <div className="tools">
         <div className="firstsec">
